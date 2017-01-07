@@ -9,9 +9,9 @@ class LiftsController < ApplicationController
     end
   end
 
-  def index
-    @lifts = Lift.all
-  end
+	def index
+		@lifts = Lift.all
+	end
 
   def destroy
     @lift = Lift.find(params[:id])
